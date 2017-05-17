@@ -22,8 +22,7 @@
 		1F3B71041ECBE71200913A41 /* UIView_Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B70FD1ECBE71200913A41 /* UIView_Inspectable.swift */; };
 		1F3B71071ECBE8B800913A41 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B71061ECBE8B800913A41 /* UIButton+Extension.swift */; };
 		1F3B71091ECBF96B00913A41 /* BaseTableViewVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B71081ECBF96B00913A41 /* BaseTableViewVc.swift */; };
-		1F3B71131ECC1CC200913A41 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3B71101ECC1C9200913A41 /* SnapKit.framework */; };
-		1F3B71141ECC1CC200913A41 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3B71101ECC1C9200913A41 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F3B711E1ECC3CE700913A41 /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B711D1ECC3CE700913A41 /* NetWorkTools.swift */; };
 		6D5E5811059ABE0FE8557D8C /* Pods_yinjiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7710B3871CA0FB859A5B98 /* Pods_yinjiTests.framework */; };
 		6F99888878D3357820050FCA /* Pods_yinji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CC329A518F73980DE5A42B /* Pods_yinji.framework */; };
 		E8BB5915ADA4F30B53AEE54C /* Pods_yinjiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD923C96CA0580A30799B05 /* Pods_yinjiUITests.framework */; };
@@ -44,27 +43,6 @@
 			remoteGlobalIDString = 1F3B70BC1ECAEFEC00913A41;
 			remoteInfo = yinji;
 		};
-		1F3B710F1ECC1C9200913A41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
-			remoteInfo = SnapKit;
-		};
-		1F3B71111ECC1C9200913A41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
-			remoteInfo = "SnapKit Tests";
-		};
-		1F3B71151ECC1CC200913A41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
-			remoteInfo = SnapKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,7 +52,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1F3B71141ECC1CC200913A41 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,7 +81,8 @@
 		1F3B70FD1ECBE71200913A41 /* UIView_Inspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Inspectable.swift; sourceTree = "<group>"; };
 		1F3B71061ECBE8B800913A41 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		1F3B71081ECBF96B00913A41 /* BaseTableViewVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewVc.swift; sourceTree = "<group>"; };
-		1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
+		1F3B711B1ECC35D400913A41 /* Header_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header_bridge.h; sourceTree = "<group>"; };
+		1F3B711D1ECC3CE700913A41 /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
 		3DD923C96CA0580A30799B05 /* Pods_yinjiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yinjiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F8E5AE4C4D1A8F68637FB4 /* Pods-yinjiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinjiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yinjiTests/Pods-yinjiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD9BE0810828C6127DF53ECE /* Pods-yinji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yinji/Pods-yinji.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,7 +99,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F99888878D3357820050FCA /* Pods_yinji.framework in Frameworks */,
-				1F3B71131ECC1CC200913A41 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +156,7 @@
 		1F3B70BF1ECAEFEC00913A41 /* yinji */ = {
 			isa = PBXGroup;
 			children = (
-				1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */,
+				1F3B70F81ECBE71200913A41 /* extension */,
 				1F3B70F61ECBE71200913A41 /* Tools */,
 				1F3B70C01ECAEFEC00913A41 /* AppDelegate.swift */,
 				1F3B70C21ECAEFEC00913A41 /* ViewController.swift */,
@@ -189,6 +166,7 @@
 				1F3B70C91ECAEFEC00913A41 /* LaunchScreen.storyboard */,
 				1F3B70CC1ECAEFEC00913A41 /* Info.plist */,
 				1F3B70F71ECBE71200913A41 /* common.swift */,
+				1F3B711B1ECC35D400913A41 /* Header_bridge.h */,
 			);
 			path = yinji;
 			sourceTree = "<group>";
@@ -214,7 +192,7 @@
 		1F3B70F61ECBE71200913A41 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				1F3B70F81ECBE71200913A41 /* extension */,
+				1F3B711D1ECC3CE700913A41 /* NetWorkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -229,16 +207,8 @@
 				1F3B70FD1ECBE71200913A41 /* UIView_Inspectable.swift */,
 				1F3B71061ECBE8B800913A41 /* UIButton+Extension.swift */,
 			);
-			path = extension;
-			sourceTree = "<group>";
-		};
-		1F3B710B1ECC1C9100913A41 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1F3B71101ECC1C9200913A41 /* SnapKit.framework */,
-				1F3B71121ECC1C9200913A41 /* SnapKit Tests.xctest */,
-			);
-			name = Products;
+			name = extension;
+			path = Tools/extension;
 			sourceTree = "<group>";
 		};
 		ED1B995718D084AABC10F67F /* Pods */ = {
@@ -272,7 +242,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				1F3B71161ECC1CC200913A41 /* PBXTargetDependency */,
 			);
 			name = yinji;
 			productName = yinji;
@@ -361,12 +330,6 @@
 			mainGroup = 1F3B70B41ECAEFEC00913A41;
 			productRefGroup = 1F3B70BE1ECAEFEC00913A41 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 1F3B710B1ECC1C9100913A41 /* Products */;
-					ProjectRef = 1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1F3B70BC1ECAEFEC00913A41 /* yinji */,
@@ -375,23 +338,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		1F3B71101ECC1C9200913A41 /* SnapKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SnapKit.framework;
-			remoteRef = 1F3B710F1ECC1C9200913A41 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1F3B71121ECC1C9200913A41 /* SnapKit Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SnapKit Tests.xctest";
-			remoteRef = 1F3B71111ECC1C9200913A41 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1F3B70BB1ECAEFEC00913A41 /* Resources */ = {
@@ -572,6 +518,7 @@
 				1F3B71071ECBE8B800913A41 /* UIButton+Extension.swift in Sources */,
 				1F3B71041ECBE71200913A41 /* UIView_Inspectable.swift in Sources */,
 				1F3B70C11ECAEFEC00913A41 /* AppDelegate.swift in Sources */,
+				1F3B711E1ECC3CE700913A41 /* NetWorkTools.swift in Sources */,
 				1F3B70FF1ECBE71200913A41 /* common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,11 +551,6 @@
 			isa = PBXTargetDependency;
 			target = 1F3B70BC1ECAEFEC00913A41 /* yinji */;
 			targetProxy = 1F3B70DD1ECAEFEC00913A41 /* PBXContainerItemProxy */;
-		};
-		1F3B71161ECC1CC200913A41 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnapKit;
-			targetProxy = 1F3B71151ECC1CC200913A41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -732,6 +674,7 @@
 			baseConfigurationReference = BD9BE0810828C6127DF53ECE /* Pods-yinji.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y8FL748PL;
 				GCC_PREFIX_HEADER = yinji/PrefixHeader.pch;
@@ -739,7 +682,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lufei.yinji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = yinji/Header_bridge.h;
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -748,6 +693,7 @@
 			baseConfigurationReference = FEB3C51D5B21CF17D917B38E /* Pods-yinji.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y8FL748PL;
 				GCC_PREFIX_HEADER = yinji/PrefixHeader.pch;
@@ -755,7 +701,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lufei.yinji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = yinji/Header_bridge.h;
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

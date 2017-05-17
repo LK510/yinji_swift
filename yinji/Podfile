@@ -9,7 +9,7 @@ target 'yinji' do
 
   pod 'AFNetworking'
   pod 'SnapKit'
-  pod 'SQLite.swift'
+#  pod 'SQLite.swift'
   use_frameworks!
   
   target 'yinjiTests' do

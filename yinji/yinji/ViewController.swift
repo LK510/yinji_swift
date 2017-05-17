@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        self.view.backgroundColor = randomColor()
+        self.view.backgroundColor = randomColor()
         
         self.view.addSubview(nameLabel)
         
@@ -32,6 +32,21 @@ class ViewController: UIViewController {
             
             print("------")
         }
+        
+        
+        let TabHttpTool = NetworkManager()
+        //创建请求参数
+        let params = ["username":"invest","password":"123456"]
+        //发送psot请求
+        
+        TabHttpTool.request(requestType: HTTPRequestType.POST, urlString: "http://api....../login", parameters: params as [String : AnyObject]) { (response) in
+            
+            
+            
+        }
+        
+   
+        
     }
     
     override func didReceiveMemoryWarning() {
