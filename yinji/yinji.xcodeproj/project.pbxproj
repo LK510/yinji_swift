@@ -14,6 +14,19 @@
 		1F3B70CB1ECAEFEC00913A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B70C91ECAEFEC00913A41 /* LaunchScreen.storyboard */; };
 		1F3B70D61ECAEFEC00913A41 /* yinjiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B70D51ECAEFEC00913A41 /* yinjiTests.swift */; };
 		1F3B70E11ECAEFEC00913A41 /* yinjiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B70E01ECAEFEC00913A41 /* yinjiUITests.swift */; };
+		1F3B70FF1ECBE71200913A41 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B70F71ECBE71200913A41 /* common.swift */; };
+		1F3B71001ECBE71200913A41 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B70F91ECBE71200913A41 /* NSDate+Extension.swift */; };
+		1F3B71011ECBE71200913A41 /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B70FA1ECBE71200913A41 /* UIBarButtonItem+extension.swift */; };
+		1F3B71021ECBE71200913A41 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B70FB1ECBE71200913A41 /* UIImage+Extension.swift */; };
+		1F3B71031ECBE71200913A41 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B70FC1ECBE71200913A41 /* UILabel+Extension.swift */; };
+		1F3B71041ECBE71200913A41 /* UIView_Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B70FD1ECBE71200913A41 /* UIView_Inspectable.swift */; };
+		1F3B71071ECBE8B800913A41 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B71061ECBE8B800913A41 /* UIButton+Extension.swift */; };
+		1F3B71091ECBF96B00913A41 /* BaseTableViewVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B71081ECBF96B00913A41 /* BaseTableViewVc.swift */; };
+		1F3B71131ECC1CC200913A41 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3B71101ECC1C9200913A41 /* SnapKit.framework */; };
+		1F3B71141ECC1CC200913A41 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3B71101ECC1C9200913A41 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D5E5811059ABE0FE8557D8C /* Pods_yinjiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7710B3871CA0FB859A5B98 /* Pods_yinjiTests.framework */; };
+		6F99888878D3357820050FCA /* Pods_yinji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CC329A518F73980DE5A42B /* Pods_yinji.framework */; };
+		E8BB5915ADA4F30B53AEE54C /* Pods_yinjiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD923C96CA0580A30799B05 /* Pods_yinjiUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +44,45 @@
 			remoteGlobalIDString = 1F3B70BC1ECAEFEC00913A41;
 			remoteInfo = yinji;
 		};
+		1F3B710F1ECC1C9200913A41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		1F3B71111ECC1C9200913A41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
+		1F3B71151ECC1CC200913A41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1F3B71171ECC1CC200913A41 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F3B71141ECC1CC200913A41 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1AB78EBF2B637DD4CEEFCD6C /* Pods-yinjiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinjiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yinjiUITests/Pods-yinjiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F3B70BD1ECAEFEC00913A41 /* yinji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yinji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3B70C01ECAEFEC00913A41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F3B70C21ECAEFEC00913A41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +96,23 @@
 		1F3B70DC1ECAEFEC00913A41 /* yinjiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yinjiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3B70E01ECAEFEC00913A41 /* yinjiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yinjiUITests.swift; sourceTree = "<group>"; };
 		1F3B70E21ECAEFEC00913A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3B70F71ECBE71200913A41 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = common.swift; path = Tools/common.swift; sourceTree = "<group>"; };
+		1F3B70F91ECBE71200913A41 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		1F3B70FA1ECBE71200913A41 /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
+		1F3B70FB1ECBE71200913A41 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		1F3B70FC1ECBE71200913A41 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		1F3B70FD1ECBE71200913A41 /* UIView_Inspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Inspectable.swift; sourceTree = "<group>"; };
+		1F3B71061ECBE8B800913A41 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		1F3B71081ECBF96B00913A41 /* BaseTableViewVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewVc.swift; sourceTree = "<group>"; };
+		1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
+		3DD923C96CA0580A30799B05 /* Pods_yinjiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yinjiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F8E5AE4C4D1A8F68637FB4 /* Pods-yinjiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinjiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yinjiTests/Pods-yinjiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD9BE0810828C6127DF53ECE /* Pods-yinji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yinji/Pods-yinji.debug.xcconfig"; sourceTree = "<group>"; };
+		BFD449B200D0E75296DCC0DA /* Pods-yinjiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinjiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yinjiTests/Pods-yinjiTests.release.xcconfig"; sourceTree = "<group>"; };
+		C145332EBCCBDED0182F5695 /* Pods-yinjiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinjiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yinjiUITests/Pods-yinjiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D2CC329A518F73980DE5A42B /* Pods_yinji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yinji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7710B3871CA0FB859A5B98 /* Pods_yinjiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yinjiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEB3C51D5B21CF17D917B38E /* Pods-yinji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinji.release.xcconfig"; path = "Pods/Target Support Files/Pods-yinji/Pods-yinji.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F99888878D3357820050FCA /* Pods_yinji.framework in Frameworks */,
+				1F3B71131ECC1CC200913A41 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5E5811059ABE0FE8557D8C /* Pods_yinjiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +137,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BB5915ADA4F30B53AEE54C /* Pods_yinjiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08745CDFF8C2701343A99EC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC329A518F73980DE5A42B /* Pods_yinji.framework */,
+				DC7710B3871CA0FB859A5B98 /* Pods_yinjiTests.framework */,
+				3DD923C96CA0580A30799B05 /* Pods_yinjiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1F3B70B41ECAEFEC00913A41 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +161,8 @@
 				1F3B70D41ECAEFEC00913A41 /* yinjiTests */,
 				1F3B70DF1ECAEFEC00913A41 /* yinjiUITests */,
 				1F3B70BE1ECAEFEC00913A41 /* Products */,
+				ED1B995718D084AABC10F67F /* Pods */,
+				08745CDFF8C2701343A99EC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +179,16 @@
 		1F3B70BF1ECAEFEC00913A41 /* yinji */ = {
 			isa = PBXGroup;
 			children = (
+				1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */,
+				1F3B70F61ECBE71200913A41 /* Tools */,
 				1F3B70C01ECAEFEC00913A41 /* AppDelegate.swift */,
 				1F3B70C21ECAEFEC00913A41 /* ViewController.swift */,
+				1F3B71081ECBF96B00913A41 /* BaseTableViewVc.swift */,
 				1F3B70C41ECAEFEC00913A41 /* Main.storyboard */,
 				1F3B70C71ECAEFEC00913A41 /* Assets.xcassets */,
 				1F3B70C91ECAEFEC00913A41 /* LaunchScreen.storyboard */,
 				1F3B70CC1ECAEFEC00913A41 /* Info.plist */,
+				1F3B70F71ECBE71200913A41 /* common.swift */,
 			);
 			path = yinji;
 			sourceTree = "<group>";
@@ -125,6 +211,49 @@
 			path = yinjiUITests;
 			sourceTree = "<group>";
 		};
+		1F3B70F61ECBE71200913A41 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1F3B70F81ECBE71200913A41 /* extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1F3B70F81ECBE71200913A41 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				1F3B70F91ECBE71200913A41 /* NSDate+Extension.swift */,
+				1F3B70FA1ECBE71200913A41 /* UIBarButtonItem+extension.swift */,
+				1F3B70FB1ECBE71200913A41 /* UIImage+Extension.swift */,
+				1F3B70FC1ECBE71200913A41 /* UILabel+Extension.swift */,
+				1F3B70FD1ECBE71200913A41 /* UIView_Inspectable.swift */,
+				1F3B71061ECBE8B800913A41 /* UIButton+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		1F3B710B1ECC1C9100913A41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F3B71101ECC1C9200913A41 /* SnapKit.framework */,
+				1F3B71121ECC1C9200913A41 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED1B995718D084AABC10F67F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD9BE0810828C6127DF53ECE /* Pods-yinji.debug.xcconfig */,
+				FEB3C51D5B21CF17D917B38E /* Pods-yinji.release.xcconfig */,
+				A3F8E5AE4C4D1A8F68637FB4 /* Pods-yinjiTests.debug.xcconfig */,
+				BFD449B200D0E75296DCC0DA /* Pods-yinjiTests.release.xcconfig */,
+				1AB78EBF2B637DD4CEEFCD6C /* Pods-yinjiUITests.debug.xcconfig */,
+				C145332EBCCBDED0182F5695 /* Pods-yinjiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,13 +261,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F3B70E51ECAEFEC00913A41 /* Build configuration list for PBXNativeTarget "yinji" */;
 			buildPhases = (
+				4CCBE01DC09099233742639A /* [CP] Check Pods Manifest.lock */,
 				1F3B70B91ECAEFEC00913A41 /* Sources */,
 				1F3B70BA1ECAEFEC00913A41 /* Frameworks */,
 				1F3B70BB1ECAEFEC00913A41 /* Resources */,
+				14BD20F64C65DCA551E1465E /* [CP] Embed Pods Frameworks */,
+				D9E127B89228D4C3787583B6 /* [CP] Copy Pods Resources */,
+				1F3B71171ECC1CC200913A41 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1F3B71161ECC1CC200913A41 /* PBXTargetDependency */,
 			);
 			name = yinji;
 			productName = yinji;
@@ -149,9 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F3B70E81ECAEFEC00913A41 /* Build configuration list for PBXNativeTarget "yinjiTests" */;
 			buildPhases = (
+				07FA48E1FA22581C2CA61756 /* [CP] Check Pods Manifest.lock */,
 				1F3B70CD1ECAEFEC00913A41 /* Sources */,
 				1F3B70CE1ECAEFEC00913A41 /* Frameworks */,
 				1F3B70CF1ECAEFEC00913A41 /* Resources */,
+				BDEC45713822270DCC2E03D7 /* [CP] Embed Pods Frameworks */,
+				23B55A5A83B96E7212ABBF63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +304,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F3B70EB1ECAEFEC00913A41 /* Build configuration list for PBXNativeTarget "yinjiUITests" */;
 			buildPhases = (
+				7D46D683D50749EE9417AB62 /* [CP] Check Pods Manifest.lock */,
 				1F3B70D81ECAEFEC00913A41 /* Sources */,
 				1F3B70D91ECAEFEC00913A41 /* Frameworks */,
 				1F3B70DA1ECAEFEC00913A41 /* Resources */,
+				D75D77CFABF5572BE77EA735 /* [CP] Embed Pods Frameworks */,
+				4B1401757370EE432413CBE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +361,12 @@
 			mainGroup = 1F3B70B41ECAEFEC00913A41;
 			productRefGroup = 1F3B70BE1ECAEFEC00913A41 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1F3B710B1ECC1C9100913A41 /* Products */;
+					ProjectRef = 1F3B710A1ECC1C9100913A41 /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1F3B70BC1ECAEFEC00913A41 /* yinji */,
@@ -229,6 +375,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1F3B71101ECC1C9200913A41 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 1F3B710F1ECC1C9200913A41 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F3B71121ECC1C9200913A41 /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = 1F3B71111ECC1C9200913A41 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1F3B70BB1ECAEFEC00913A41 /* Resources */ = {
@@ -257,13 +420,159 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07FA48E1FA22581C2CA61756 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		14BD20F64C65DCA551E1465E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yinji/Pods-yinji-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23B55A5A83B96E7212ABBF63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yinjiTests/Pods-yinjiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B1401757370EE432413CBE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yinjiUITests/Pods-yinjiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CCBE01DC09099233742639A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D46D683D50749EE9417AB62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDEC45713822270DCC2E03D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yinjiTests/Pods-yinjiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D75D77CFABF5572BE77EA735 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yinjiUITests/Pods-yinjiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9E127B89228D4C3787583B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yinji/Pods-yinji-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F3B70B91ECAEFEC00913A41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F3B71011ECBE71200913A41 /* UIBarButtonItem+extension.swift in Sources */,
+				1F3B71091ECBF96B00913A41 /* BaseTableViewVc.swift in Sources */,
+				1F3B71001ECBE71200913A41 /* NSDate+Extension.swift in Sources */,
 				1F3B70C31ECAEFEC00913A41 /* ViewController.swift in Sources */,
+				1F3B71031ECBE71200913A41 /* UILabel+Extension.swift in Sources */,
+				1F3B71021ECBE71200913A41 /* UIImage+Extension.swift in Sources */,
+				1F3B71071ECBE8B800913A41 /* UIButton+Extension.swift in Sources */,
+				1F3B71041ECBE71200913A41 /* UIView_Inspectable.swift in Sources */,
 				1F3B70C11ECAEFEC00913A41 /* AppDelegate.swift in Sources */,
+				1F3B70FF1ECBE71200913A41 /* common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +604,11 @@
 			isa = PBXTargetDependency;
 			target = 1F3B70BC1ECAEFEC00913A41 /* yinji */;
 			targetProxy = 1F3B70DD1ECAEFEC00913A41 /* PBXContainerItemProxy */;
+		};
+		1F3B71161ECC1CC200913A41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			targetProxy = 1F3B71151ECC1CC200913A41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,9 +729,12 @@
 		};
 		1F3B70E61ECAEFEC00913A41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD9BE0810828C6127DF53ECE /* Pods-yinji.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y8FL748PL;
+				GCC_PREFIX_HEADER = yinji/PrefixHeader.pch;
 				INFOPLIST_FILE = yinji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lufei.yinji;
@@ -428,9 +745,12 @@
 		};
 		1F3B70E71ECAEFEC00913A41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB3C51D5B21CF17D917B38E /* Pods-yinji.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y8FL748PL;
+				GCC_PREFIX_HEADER = yinji/PrefixHeader.pch;
 				INFOPLIST_FILE = yinji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lufei.yinji;
@@ -441,6 +761,7 @@
 		};
 		1F3B70E91ECAEFEC00913A41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3F8E5AE4C4D1A8F68637FB4 /* Pods-yinjiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +777,7 @@
 		};
 		1F3B70EA1ECAEFEC00913A41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD449B200D0E75296DCC0DA /* Pods-yinjiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +793,7 @@
 		};
 		1F3B70EC1ECAEFEC00913A41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB78EBF2B637DD4CEEFCD6C /* Pods-yinjiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2Y8FL748PL;
@@ -485,6 +808,7 @@
 		};
 		1F3B70ED1ECAEFEC00913A41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C145332EBCCBDED0182F5695 /* Pods-yinjiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2Y8FL748PL;
@@ -516,6 +840,7 @@
 				1F3B70E71ECAEFEC00913A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F3B70E81ECAEFEC00913A41 /* Build configuration list for PBXNativeTarget "yinjiTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +849,7 @@
 				1F3B70EA1ECAEFEC00913A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F3B70EB1ECAEFEC00913A41 /* Build configuration list for PBXNativeTarget "yinjiUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +858,7 @@
 				1F3B70ED1ECAEFEC00913A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
