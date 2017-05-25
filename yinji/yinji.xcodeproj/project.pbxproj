@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0F31231ED40D2F003029AD /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F31221ED40D2F003029AD /* UserInfo.swift */; };
+		1F0F313E1ED55CF4003029AD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0F313D1ED55CF4003029AD /* libsqlite3.tbd */; };
+		1F0F31421ED579B3003029AD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F31411ED579B3003029AD /* TestViewController.m */; };
+		1F0F31861ED671CA003029AD /* ModuleNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F31851ED671CA003029AD /* ModuleNetManager.swift */; };
+		1F0F31881ED674B5003029AD /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F31871ED674B5003029AD /* TimeUtils.swift */; };
+		1F0F318A1ED6AA71003029AD /* SystemUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F31891ED6AA71003029AD /* SystemUtils.swift */; };
 		1F3B70C11ECAEFEC00913A41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B70C01ECAEFEC00913A41 /* AppDelegate.swift */; };
 		1F3B70C31ECAEFEC00913A41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B70C21ECAEFEC00913A41 /* ViewController.swift */; };
 		1F3B70C61ECAEFEC00913A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B70C41ECAEFEC00913A41 /* Main.storyboard */; };
@@ -60,6 +66,14 @@
 
 /* Begin PBXFileReference section */
 		1AB78EBF2B637DD4CEEFCD6C /* Pods-yinjiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinjiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yinjiUITests/Pods-yinjiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F0F31221ED40D2F003029AD /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		1F0F313D1ED55CF4003029AD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1F0F31401ED579B3003029AD /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		1F0F31411ED579B3003029AD /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		1F0F31831ED66DE6003029AD /* yinji_bridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yinji_bridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F0F31851ED671CA003029AD /* ModuleNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleNetManager.swift; sourceTree = "<group>"; };
+		1F0F31871ED674B5003029AD /* TimeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
+		1F0F31891ED6AA71003029AD /* SystemUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemUtils.swift; sourceTree = "<group>"; };
 		1F3B70BD1ECAEFEC00913A41 /* yinji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yinji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3B70C01ECAEFEC00913A41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F3B70C21ECAEFEC00913A41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +95,6 @@
 		1F3B70FD1ECBE71200913A41 /* UIView_Inspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Inspectable.swift; sourceTree = "<group>"; };
 		1F3B71061ECBE8B800913A41 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		1F3B71081ECBF96B00913A41 /* BaseTableViewVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewVc.swift; sourceTree = "<group>"; };
-		1F3B711B1ECC35D400913A41 /* Header_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header_bridge.h; sourceTree = "<group>"; };
 		1F3B711D1ECC3CE700913A41 /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
 		3DD923C96CA0580A30799B05 /* Pods_yinjiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yinjiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F8E5AE4C4D1A8F68637FB4 /* Pods-yinjiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinjiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yinjiTests/Pods-yinjiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0F313E1ED55CF4003029AD /* libsqlite3.tbd in Frameworks */,
 				6F99888878D3357820050FCA /* Pods_yinji.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,11 +138,30 @@
 		08745CDFF8C2701343A99EC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F0F313D1ED55CF4003029AD /* libsqlite3.tbd */,
 				D2CC329A518F73980DE5A42B /* Pods_yinji.framework */,
 				DC7710B3871CA0FB859A5B98 /* Pods_yinjiTests.framework */,
 				3DD923C96CA0580A30799B05 /* Pods_yinjiUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F0F31211ED40D10003029AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F0F31221ED40D2F003029AD /* UserInfo.swift */,
+			);
+			name = Model;
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1F0F31841ED67197003029AD /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1F0F31851ED671CA003029AD /* ModuleNetManager.swift */,
+			);
+			name = Module;
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		1F3B70B41ECAEFEC00913A41 = {
@@ -156,6 +189,8 @@
 		1F3B70BF1ECAEFEC00913A41 /* yinji */ = {
 			isa = PBXGroup;
 			children = (
+				1F0F31841ED67197003029AD /* Module */,
+				1F0F31211ED40D10003029AD /* Model */,
 				1F3B70F81ECBE71200913A41 /* extension */,
 				1F3B70F61ECBE71200913A41 /* Tools */,
 				1F3B70C01ECAEFEC00913A41 /* AppDelegate.swift */,
@@ -166,7 +201,9 @@
 				1F3B70C91ECAEFEC00913A41 /* LaunchScreen.storyboard */,
 				1F3B70CC1ECAEFEC00913A41 /* Info.plist */,
 				1F3B70F71ECBE71200913A41 /* common.swift */,
-				1F3B711B1ECC35D400913A41 /* Header_bridge.h */,
+				1F0F31831ED66DE6003029AD /* yinji_bridge-Bridging-Header.h */,
+				1F0F31401ED579B3003029AD /* TestViewController.h */,
+				1F0F31411ED579B3003029AD /* TestViewController.m */,
 			);
 			path = yinji;
 			sourceTree = "<group>";
@@ -193,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				1F3B711D1ECC3CE700913A41 /* NetWorkTools.swift */,
+				1F0F31871ED674B5003029AD /* TimeUtils.swift */,
+				1F0F31891ED6AA71003029AD /* SystemUtils.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -510,14 +549,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3B71011ECBE71200913A41 /* UIBarButtonItem+extension.swift in Sources */,
+				1F0F31421ED579B3003029AD /* TestViewController.m in Sources */,
+				1F0F318A1ED6AA71003029AD /* SystemUtils.swift in Sources */,
 				1F3B71091ECBF96B00913A41 /* BaseTableViewVc.swift in Sources */,
 				1F3B71001ECBE71200913A41 /* NSDate+Extension.swift in Sources */,
 				1F3B70C31ECAEFEC00913A41 /* ViewController.swift in Sources */,
+				1F0F31231ED40D2F003029AD /* UserInfo.swift in Sources */,
+				1F0F31881ED674B5003029AD /* TimeUtils.swift in Sources */,
 				1F3B71031ECBE71200913A41 /* UILabel+Extension.swift in Sources */,
 				1F3B71021ECBE71200913A41 /* UIImage+Extension.swift in Sources */,
 				1F3B71071ECBE8B800913A41 /* UIButton+Extension.swift in Sources */,
 				1F3B71041ECBE71200913A41 /* UIView_Inspectable.swift in Sources */,
 				1F3B70C11ECAEFEC00913A41 /* AppDelegate.swift in Sources */,
+				1F0F31861ED671CA003029AD /* ModuleNetManager.swift in Sources */,
 				1F3B711E1ECC3CE700913A41 /* NetWorkTools.swift in Sources */,
 				1F3B70FF1ECBE71200913A41 /* common.swift in Sources */,
 			);
@@ -677,12 +721,12 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y8FL748PL;
-				GCC_PREFIX_HEADER = yinji/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = yinji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lufei.yinji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = yinji/Header_bridge.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "yinji/yinji_bridge-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
@@ -696,12 +740,12 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y8FL748PL;
-				GCC_PREFIX_HEADER = yinji/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = yinji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lufei.yinji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = yinji/Header_bridge.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "yinji/yinji_bridge-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};

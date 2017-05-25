@@ -28,10 +28,14 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        present(baseVc, animated: true) { 
-            
-            print("------")
-        }
+//        present(baseVc, animated: true) { 
+//            
+//            print("------")
+//        }
+        
+        
+        //OC混编
+        var testVc:TestViewController = TestViewController()
         
         
         let TabHttpTool = NetworkManager()
@@ -39,13 +43,16 @@ class ViewController: UIViewController {
         let params = ["username":"invest","password":"123456"]
         //发送psot请求
         
-        TabHttpTool.request(requestType: HTTPRequestType.POST, urlString: "http://api....../login", parameters: params as [String : AnyObject]) { (response) in
-            
-            
-            
-        }
+//        TabHttpTool.request(method: RequsetMethod.POST, urlString: "http://123.57.39.181/fyq/answer/web/index.php?r=site/index", parameters: params as AnyObject) { (response, error) in
+//            print(response as Any)
+//        }
         
-   
+//        let set:NSSet = NSSet(object: "text/html")
+//        TabHttpTool.responseSerializer.acceptableContentTypes = set
+        
+        TabHttpTool.request(method: RequsetMethod.GET, urlString: "http://123.57.39.181/fyq/answer/web/index.php?r=site/index", parameters: params as AnyObject) { (response, error) in
+            print(response as Any)
+        }
         
     }
     
