@@ -10,6 +10,8 @@ import Foundation
 
 class ModuleNetManager: NSObject {
     
+    private lazy var TabHttpTool:NetworkManager = NetworkManager()
+    
     public func userLogin(userInfo:UserInfo) -> Bool {
         
         var param:NSMutableDictionary = NSMutableDictionary{ () -> NSMutableDictionary in
@@ -27,11 +29,20 @@ class ModuleNetManager: NSObject {
             return param
             
         }
-        
-        //        [paramMap setValue:[UserIdUtils getUUID] forKey:@"deviceid"];
-        
+                
+        TabHttpTool.request(method: RequsetMethod.POST, urlString: "https://api.anybeen.com/index.php", parameters: param as AnyObject) { (response, error) in
+            
+            
+//            let resDic = try?JSONSerialization.jsonObject(with: response, options: [])
+            
+            
+            print(response as Any)
+  
+            
+        }
         
         return true
+        
     }
 
 }

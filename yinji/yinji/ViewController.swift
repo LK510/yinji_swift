@@ -16,11 +16,27 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = randomColor()
+//        self.view.backgroundColor = randomColor()
         
         self.view.addSubview(nameLabel)
+        
+    }
+    @IBAction func logDidClick(_ sender: Any) {
+        
+        let systemManager:SystemUtils = SystemUtils()
+        let userPwd:String = systemManager.md5String(str: "111111")
+        
+        let dic = ["userName":"text13","userPwd":userPwd]
+
+        let info = UserInfo(dict: dic as [String : AnyObject])
+        
+//        info.setValuesForKeys(dic)
+        
+        
+        let netManager:ModuleNetManager = ModuleNetManager()
+        
+        netManager.userLogin(userInfo: info)
         
     }
 

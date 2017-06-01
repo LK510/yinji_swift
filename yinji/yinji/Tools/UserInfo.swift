@@ -20,7 +20,7 @@ class UserInfo: NSObject {
     var nickName: String?
     var intro: String?
     var icon: String?
-
+    
     
     //KVC
     init(dict: [String : AnyObject]) {
@@ -29,6 +29,9 @@ class UserInfo: NSObject {
     }
     
     //过滤
-    override func setValue(_ value: Any?, forUndefinedKey key: String) {     }
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {}
+    
+    
+
     
 }

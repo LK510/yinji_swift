@@ -10,5 +10,6 @@
 #define yinji_bridge_Bridging_Header_h
 
 #import "TestViewController.h"
-
+#import "SQlite3.h"
+#import <CommonCrypto/CommonDigest.h>
 #endif /* yinji_bridge_Bridging_Header_h */

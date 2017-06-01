@@ -29,6 +29,7 @@
 		1F3B71071ECBE8B800913A41 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B71061ECBE8B800913A41 /* UIButton+Extension.swift */; };
 		1F3B71091ECBF96B00913A41 /* BaseTableViewVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B71081ECBF96B00913A41 /* BaseTableViewVc.swift */; };
 		1F3B711E1ECC3CE700913A41 /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B711D1ECC3CE700913A41 /* NetWorkTools.swift */; };
+		1F473F331EDEB8C7003CF484 /* SQliteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F473F321EDEB8C7003CF484 /* SQliteManager.swift */; };
 		6D5E5811059ABE0FE8557D8C /* Pods_yinjiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7710B3871CA0FB859A5B98 /* Pods_yinjiTests.framework */; };
 		6F99888878D3357820050FCA /* Pods_yinji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CC329A518F73980DE5A42B /* Pods_yinji.framework */; };
 		E8BB5915ADA4F30B53AEE54C /* Pods_yinjiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD923C96CA0580A30799B05 /* Pods_yinjiUITests.framework */; };
@@ -96,6 +97,7 @@
 		1F3B71061ECBE8B800913A41 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		1F3B71081ECBF96B00913A41 /* BaseTableViewVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewVc.swift; sourceTree = "<group>"; };
 		1F3B711D1ECC3CE700913A41 /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
+		1F473F321EDEB8C7003CF484 /* SQliteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQliteManager.swift; sourceTree = "<group>"; };
 		3DD923C96CA0580A30799B05 /* Pods_yinjiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yinjiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F8E5AE4C4D1A8F68637FB4 /* Pods-yinjiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinjiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yinjiTests/Pods-yinjiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD9BE0810828C6127DF53ECE /* Pods-yinji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yinji/Pods-yinji.debug.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				1F3B711D1ECC3CE700913A41 /* NetWorkTools.swift */,
 				1F0F31871ED674B5003029AD /* TimeUtils.swift */,
 				1F0F31891ED6AA71003029AD /* SystemUtils.swift */,
+				1F473F321EDEB8C7003CF484 /* SQliteManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				1F3B71041ECBE71200913A41 /* UIView_Inspectable.swift in Sources */,
 				1F3B70C11ECAEFEC00913A41 /* AppDelegate.swift in Sources */,
 				1F0F31861ED671CA003029AD /* ModuleNetManager.swift in Sources */,
+				1F473F331EDEB8C7003CF484 /* SQliteManager.swift in Sources */,
 				1F3B711E1ECC3CE700913A41 /* NetWorkTools.swift in Sources */,
 				1F3B70FF1ECBE71200913A41 /* common.swift in Sources */,
 			);
