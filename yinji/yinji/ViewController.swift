@@ -22,24 +22,7 @@ class ViewController: UIViewController {
         self.view.addSubview(nameLabel)
         
     }
-    @IBAction func logDidClick(_ sender: Any) {
-        
-        let systemManager:SystemUtils = SystemUtils()
-        let userPwd:String = systemManager.md5String(str: "111111")
-        
-        let dic = ["userName":"text13","userPwd":userPwd]
-
-        let info = UserInfo(dict: dic as [String : AnyObject])
-        
-//        info.setValuesForKeys(dic)
-        
-        
-        let netManager:ModuleNetManager = ModuleNetManager()
-        
-        netManager.userLogin(userInfo: info)
-        
-    }
-
+    
     lazy var baseVc:BaseTableViewVc = BaseTableViewVc()
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -55,22 +38,41 @@ class ViewController: UIViewController {
         
         
         let TabHttpTool = NetworkManager()
+        
         //创建请求参数
         let params = ["username":"invest","password":"123456"]
-        //发送psot请求
         
-//        TabHttpTool.request(method: RequsetMethod.POST, urlString: "http://123.57.39.181/fyq/answer/web/index.php?r=site/index", parameters: params as AnyObject) { (response, error) in
-//            print(response as Any)
-//        }
-        
-//        let set:NSSet = NSSet(object: "text/html")
-//        TabHttpTool.responseSerializer.acceptableContentTypes = set
-        
-        TabHttpTool.request(method: RequsetMethod.GET, urlString: "http://123.57.39.181/fyq/answer/web/index.php?r=site/index", parameters: params as AnyObject) { (response, error) in
-            print(response as Any)
-        }
+        TabHttpTool.request(URLString: "http://123.57.39.181/fyq/answer/web/index.php?r=site/index", parameters: params as [String : AnyObject], completed:{(json: AnyObject?,isSuccess: Bool)-> () in
+            
+            // 请求成功
+            if isSuccess {
+                print(json ?? "")
+            } else {
+                print("请求失败")
+            }
+        })
         
     }
+    
+    
+    @IBAction func logDidClick(_ sender: Any) {
+        
+        let systemManager:SystemUtils = SystemUtils()
+        let userPwd:String = systemManager.md5String(str: "111111")
+        
+        let dic = ["userName":"text13","userPwd":userPwd]
+        
+        let info = UserInfo(dict: dic as [String : AnyObject])
+        
+        //        info.setValuesForKeys(dic)
+        
+        
+        let netManager:ModuleNetManager = ModuleNetManager()
+        
+        netManager.userLogin(userInfo: info)
+        
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

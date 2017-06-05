@@ -47,7 +47,7 @@
                                 </constraints>
                                 <state key="normal" title="登录"/>
                                 <connections>
-                                    <action selector="logDidClick:" destination="BYZ-38-t0r" eventType="touchDragInside" id="V1R-SA-fa8"/>
+                                    <action selector="logDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHZ-nJ-41u"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,9 +64,6 @@
                             <constraint firstItem="ap0-hK-jhU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="x5c-2f-q9Q"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="logDidClick" destination="LKY-wl-GBW" id="3Hk-yd-BiT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

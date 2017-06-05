@@ -24,7 +24,7 @@ class NetworkManager: AFHTTPSessionManager {
       
         let instance = NetworkManager()
         instance.responseSerializer.acceptableContentTypes?.insert("text/html")
-        instance.responseSerializer.acceptableContentTypes?.insert("text/plain")
+//        instance.responseSerializer.acceptableContentTypes?.insert("text/plain")
         return instance
         
     }()
@@ -38,31 +38,30 @@ class NetworkManager: AFHTTPSessionManager {
     ///   - urlString: urlString
     ///   - parameters: 字典参数
     ///   - completion: 回调
-    func request(method: RequsetMethod = .GET, urlString: String, parameters: AnyObject?, finished:@escaping httptoolBack){
+    func request(Method:RequsetMethod = .GET, URLString: String,parameters: [String: AnyObject]?, completed:@escaping ((_ json: AnyObject?, _ isSuccess: Bool)->())) {
         
-        // dataTaskWithHttp 是写在 .m 文件里面的
-        // 对应在 Swift 中的，就是 private 修饰的方法
-        
-        // 定义请求成功的闭包
-        let success = { (dataTask: URLSessionDataTask, responseObject: AnyObject?) -> Void in
-            finished(responseObject, nil)
+        /// 定义成功回调闭包
+        let success = { (task: URLSessionDataTask,json: Any?)->() in
+            completed(json as AnyObject?,true)
         }
         
-        // 定义请求失败的闭包
-        let failure = { (dataTask: URLSessionDataTask?, error: NSError) -> Void in
-            finished(nil, error)
+        /// 定义失败回调闭包
+        let failure = {(task: URLSessionDataTask?, error: Error)->() in
+            completed(nil,false)
         }
         
-        if method == .GET {
+        /// 通过请求方法,执行不同的请求
+        // 如果是 GET 请求
+        if Method == .GET { // GET
             
-            get(urlString, parameters: parameters, progress: nil, success: success as? (URLSessionDataTask, Any?) -> Void, failure: failure as? (URLSessionDataTask?, Error) -> Void)
+            get(URLString, parameters: parameters, progress: nil, success: success, failure: failure)
             
-        }else{
+        } else { // POST
             
-            post(urlString, parameters: parameters, progress: nil, success: success as? (URLSessionDataTask, Any?) -> Void, failure: failure as? (URLSessionDataTask?, Error) -> Void)
-            
+            post(URLString, parameters: parameters, progress: nil, success: success, failure: failure)
         }
     }
+
     
     /// 发送请求(上传文件)
     

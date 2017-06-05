@@ -11,5 +11,6 @@
 
 #import "TestViewController.h"
 #import "SQlite3.h"
+#import "AFNetworking.h"
 #import <CommonCrypto/CommonDigest.h>
 #endif /* yinji_bridge_Bridging_Header_h */
