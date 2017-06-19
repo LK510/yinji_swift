@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
         
         //OC混编
-        var testVc:TestViewController = TestViewController()
+//        var testVc:TestViewController = TestViewController()
         
         
         let TabHttpTool = NetworkManager()
@@ -51,6 +51,10 @@ class ViewController: UIViewController {
                 print("请求失败")
             }
         })
+        
+        FMNetworkTools.sharedTools.request(method: HTTPMethods.POST, urlString: "http://123.57.39.181/fyq/answer/web/index.php?r=site/index", parameters: params as AnyObject) {(_ responseObject: AnyObject?, _ error: NSError?) in
+            print(responseObject ?? AnyObject.self)
+        }
         
     }
     
